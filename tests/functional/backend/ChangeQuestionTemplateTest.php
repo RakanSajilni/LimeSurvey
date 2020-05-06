@@ -234,7 +234,7 @@ class ChangeQuestionTemplateTest extends TestBaseClassWeb
             $web = self::$webDriver;
             $web->get($url);
 
-            sleep(3);
+            sleep(5);
 
             // Select Question Editor View
             try {
@@ -265,19 +265,19 @@ class ChangeQuestionTemplateTest extends TestBaseClassWeb
             $option = $web->findByCss('#question_template option[value=bootstrap_buttons]');
             $option->click();
             
-            sleep(2);
+            sleep(3);
 
             // Save Question
             $saveButton = $web->findElement(WebDriverBy::cssSelector('#save-button'));
             $saveButton->click();
 
-            $web->wait(10)->until(WebDriverExpectedCondition::visibilityOfElementLocated(WebDriverBy::id('uncollapsed-general-settings')));
+            $web->wait(15)->until(WebDriverExpectedCondition::visibilityOfElementLocated(WebDriverBy::id('uncollapsed-general-settings')));
 
              // Change question template to default
             $option = $web->findElement(WebDriverBy::cssSelector('#question_template option[value=core]'));
             $option->click();
  
-            sleep(1);
+            sleep(3);
             
             // Save Question
             $saveButton = $web->findElement(WebDriverBy::cssSelector('#save-button'));
@@ -291,7 +291,7 @@ class ChangeQuestionTemplateTest extends TestBaseClassWeb
             );
             $this->assertNotNull($scopeApplyBaseStyleContainer);
 
-            sleep(1);
+            sleep(3);
 
             // Check if Display theme options link exists
             try {
