@@ -33,3 +33,42 @@ test('hasIndividualAnsweroptionCodes is true for one answer options', () => {
     const result = getters.hasIndividualAnsweroptionCodes(state);
     expect(result).toBe(true);
 });
+
+test('hasIndividualAnsweroptionCodes is true for three different answer options', () => {
+    const state = {
+        currentQuestionAnswerOptions: {
+            // NB: 0 = scale id
+            "0": [
+                {
+                    code: "SQ00",
+                },
+                {
+                    code: "SQ01",
+                },
+                {
+                    code: "SQ02",
+                }
+            ]
+        }
+    };
+    const result = getters.hasIndividualAnsweroptionCodes(state);
+    expect(result).toBe(true);
+});
+
+test('hasIndividualAnsweroptionCodes is false for two same answer options', () => {
+    const state = {
+        currentQuestionAnswerOptions: {
+            // NB: 0 = scale id
+            "0": [
+                {
+                    code: "SQ01",
+                },
+                {
+                    code: "SQ01",
+                }
+            ]
+        }
+    };
+    const result = getters.hasIndividualAnsweroptionCodes(state);
+    expect(result).toBe(false);
+});
