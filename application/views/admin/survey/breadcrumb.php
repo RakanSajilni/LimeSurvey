@@ -9,7 +9,7 @@
                 <ol class="breadcrumb ls-flex-row align-items-center align-content-flex-start <?php echo $extraClass?>">
                     <li>
                         <a id="breadcrumb__surveylist--link" class="pjax animate home-icon" href="<?php echo App()->createUrl('admin/survey/sa/listsurveys'); ?>">
-                            <img src="<?php echo LOGO_ICON_URL ?>" height="26" style="display:block;" alt="Survey list" title="<?php et('Survey list')?>" />
+                            <img src="/limoo/LimeSurvey/assets/images/white-logo.png" height="26" style="display:block;"  title="<?php et('Survey list')?>" />
                         </a>
                     </li>
                     <?php //First create the basis with a surveylink if set?>

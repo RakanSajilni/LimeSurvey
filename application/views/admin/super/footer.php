@@ -48,7 +48,7 @@ foreach($systemInfos as $key=>$systemInfo) {
 }
 ?>
 <!-- Footer -->
-<footer class='footer'>
+<footer class='footer' style="display: none">
     <div class="container-fluid">
         <div class="row">
             <!-- Link to manual -->

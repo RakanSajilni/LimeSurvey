@@ -2054,7 +2054,7 @@ function db_upgrade_all($iOldDBVersion, $bSilent = false)
                     'api_version'   => '3.0',
                     'view_folder'   => 'views',
                     'files_folder'  => 'files',
-                    'description'   => '<strong>LimeSurvey Bootstrap Vanilla Survey Theme</strong><br>A clean and simple base that can be used by developers to create their own Bootstrap based theme.',
+                    'description'   => '<strong>Sajilni Survey Bootstrap Vanilla Survey Theme</strong><br>A clean and simple base that can be used by developers to create their own Bootstrap based theme.',
                     'last_update'   => null,
                     'owner_id'      => 1,
                     'extends'       => '',
@@ -3275,7 +3275,7 @@ function upgrade331($oDB)
         'name'        => 'bootswatch',
         'folder'      => 'bootswatch',
         'title'       => 'Bootswatch Theme',
-        'description' => '<strong>LimeSurvey Bootwatch Theme</strong><br>Based on BootsWatch Themes: <a href=\'https://bootswatch.com/3/\'>Visit BootsWatch page</a>',
+        'description' => '<strong>Sajilni Survey Bootwatch Theme</strong><br>Based on BootsWatch Themes: <a href=\'https://bootswatch.com/3/\'>Visit BootsWatch page</a>',
     ), "name='default'");
 
     $oDB->createCommand()->update('{{templates}}', array(
@@ -3294,7 +3294,7 @@ function upgrade331($oDB)
         'name'        => 'fruity',
         'folder'      => 'fruity',
         'title'       => 'Fruity Theme',
-        'description' => '<strong>LimeSurvey Fruity Theme</strong><br>Some color themes for a flexible use. This theme offers many options.',
+        'description' => '<strong>Sa Fruity Theme</strong><br>Some color themes for a flexible use. This theme offers many options.',
     ), "name='monochrome'");
 
     $oDB->createCommand()->update('{{templates}}', array(

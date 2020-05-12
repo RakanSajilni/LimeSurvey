@@ -1,5 +1,5 @@
 ![LimeSurvey Logo](https://www.limesurvey.org/images/logos/logo_main.png)
-# LimeSurvey Bootstrap Vanilla Survey Theme
+# Sajilni Survey Bootstrap Vanilla Survey Theme
 
 ## Survey directory
 The subviews to render the question groups and the questions.

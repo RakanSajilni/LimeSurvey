@@ -22,7 +22,10 @@ echo viewHelper::getViewTestTag('index');
     gT('Edit label sets');
     gT('Themes');
 ?>
+<?php
+include 'ChromePhp.php';
 
+?>
 <!-- Welcome view -->
 <div class="container-fluid welcome full-page-wrapper">
 
@@ -30,7 +33,7 @@ echo viewHelper::getViewTestTag('index');
     <?php if($bShowLogo):?>
         <div class="row">
             <div class="jumbotron" id="welcome-jumbotron">
-                <img alt="logo" src="<?php echo LOGO_URL;?>" id="lime-logo"  class="profile-img-card img-responsive center-block" />
+                <img alt="logo" src="/limoo/LimeSurvey/assets/images/logo.png" id="lime-logo"  class="profile-img-card img-responsive center-block" />
                 <p class="hidden-xs custom custom-margin top-25" ><?php echo PRESENTATION; // Defined in AdminController?></p>
             </div>
         </div>

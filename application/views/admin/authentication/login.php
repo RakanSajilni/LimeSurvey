@@ -16,8 +16,7 @@ echo viewHelper::getViewTestTag('login');
                 <!-- Header -->
                 <div class="panel-body">
                     <div class="row">
-                          <img alt="logo" id="profile-img" class="profile-img-card center-block" src="<?php echo LOGO_URL;?>" />
-                             <p><?php eT("Administration");?></p>
+                          <img alt="logo" id="profile-img" class="profile-img-card center-block" src="/limoo/LimeSurvey/assets/images/logo.png" />
                     </div>
                 </div>
 

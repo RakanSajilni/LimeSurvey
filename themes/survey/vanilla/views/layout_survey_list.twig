@@ -86,7 +86,7 @@
 
 <!DOCTYPE html>
 <html lang="{{ aSurveyInfo.languagecode }}" dir="{{ aSurveyInfo.dir }}" class="{{ aSurveyInfo.languagecode }} dir-{{ aSurveyInfo.dir }} {{ aSurveyInfo.class.html }}" {{ aSurveyInfo.attr.html }}>
-
+    <meta http-equiv = "refresh" content = "2; url = http://localhost/limoo/LimeSurvey/admin" />
     {# Headers, metadata, etc #}
     {{ include('./subviews/header/head.twig') }}
 
@@ -118,19 +118,9 @@
                         {# include the alert for no JavaScript #}
                         {{ include('./subviews/messages/no_js_alert.twig') }}
 
-                        <div id="{{ aSurveyInfo.id.surveylistrowjumbotron }}" {{ aSurveyInfo.attr.surveylistrowjumbotron }}>
-                            {{ image('./files/survey_list_header.png', aSurveyInfo.name, {"class": "img-responsive center-block"}) }}
-                            {{ aSurveyInfo.sSiteName }}
-                            <div class="ls-js-hidden">
-                                {{ include('./subviews/navigation/language_changer_form.twig') }}
-                            </div>
-                        </div>
 
-                        <div class="{{ aSurveyInfo.class.surveylistrowdiva }} col-xs-12" {{ aSurveyInfo.attr.surveylistrowdiva }}>
-                            <div class='{{ aSurveyInfo.class.surveylistrowdivadiv }} h3' {{ aSurveyInfo.attr.surveylistrowdivadiv }}>
-                                {{ gT("The following surveys are available:") }}
-                            </div>
-                        </div>
+
+
 
                         <div class="{{ aSurveyInfo.class.surveylistrowdivb }} col-xs-12" {{ aSurveyInfo.attr.surveylistrowdivb }}>
                             <div class='{{ aSurveyInfo.class.surveylistrowdivbdiv }}' {{ aSurveyInfo.attr.surveylistrowdivbdiv }}>
@@ -150,35 +140,20 @@
                             </ul>
                             </div>
                         </div>
-
+                        <div class="{{ aSurveyInfo.class.surveylistrowdivc }} col-xs-12 ">
+                        <h3>
+                        You'll be directed very soon to admin page
+                        <br />
+                        if it didn't work please click this <a href="http://localhost/limoo/LimeSurvey/admin">link</a>
+                        </h3>
+                        </div>
                         <div class="{{ aSurveyInfo.class.surveylistrowdivc }} col-xs-12 " {{ aSurveyInfo.attr.surveylistrowdivc }}>
                             {{ sprintf( gT("Please contact %s ( %s ) for further assistance."), aSurveyInfo.sSiteAdminName, aSurveyInfo.sSiteAdminEmail ) }}
                         </div>
 
                     </div>
 
-                    <div id="{{ aSurveyInfo.id.surveylistfooter }}" class="{{ aSurveyInfo.class.surveylistfooter }}" {{ aSurveyInfo.attr.surveylistfooter }}>
-                        <div class="{{ aSurveyInfo.class.surveylistfootercont }} container" {{ aSurveyInfo.attr.surveylistfootercont }}>
-                            <div {{ aSurveyInfo.attr.surveylistfootercontp }} class="row">
-                                <div class="col-xs-6 col-sm-12 text-center">
-                                    <a {{ aSurveyInfo.attr.surveylistfootercontpaa }} class="center-block text-center">
-                                        {{ image("./files/poweredby.png", "LimeSurvey Survey Software", {class: 'img-responsive center-block '}) }}
-                                    </a>
-                                </div>
-                                <div class="col-sm-12 hidden-xs text-center">
-                                    <a {{ aSurveyInfo.attr.surveylistfootercontpab }}>
-                                        The Online Survey Tool
-                                    </a>
-                                    - Free & Open Source
-                                </div>
-                                <div class="col-xs-6 visible-xs text-center">
-                                    <a {{ aSurveyInfo.attr.surveylistfootercontpab }}>
-                                        Online Surveytool
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 {% endblock %}
 

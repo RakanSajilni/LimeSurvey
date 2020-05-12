@@ -17120,7 +17120,7 @@ msgid "Test if your server has SSL enabled by clicking on this link."
 msgstr ""
 
 #: application/views/admin/globalsettings/_security.php:107
-msgid "If the link does not work and you turn on HTTPS, LimeSurvey will break and you won't be able to access it."
+msgid "If the link does not work and you turn on HTTPS, Sajilni Survey will break and you won't be able to access it."
 msgstr ""
 
 #: application/views/admin/globalsettings/_storage.php:13
@@ -24237,7 +24237,7 @@ msgid "Upload your files"
 msgstr ""
 
 #: tmp/runtime/twig_cache/66/66a11e2a0a9040e90c5506ddd0d8014f884921fa59d76da78d43dbfd7d9e4e35.php:55
-msgid "LimeSurvey Fruity Theme"
+msgid "Sajilni Survey Fruity Theme"
 msgstr ""
 
 #: tmp/runtime/twig_cache/66/66a11e2a0a9040e90c5506ddd0d8014f884921fa59d76da78d43dbfd7d9e4e35.php:57
